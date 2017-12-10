@@ -55,9 +55,10 @@
     "node-sass":"4.7.2"
   },
   "scripts": {
-    "start": "npm run build && node server/server.js",
+    "start": "node server/server.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "heroku-postbuild": "npm run build"
   },
   "jest": {
     "collectCoverageFrom": [
