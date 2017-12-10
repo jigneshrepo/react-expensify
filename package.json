@@ -53,7 +53,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "npm run build && serve -s build",   
+    "start": "npm run build && node server/server.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
@@ -106,6 +106,6 @@
   "devDependencies": {
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "webpack": "^3.8.1"
+    "webpack": "^3.10.0"
   }
 }
