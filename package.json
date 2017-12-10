@@ -43,6 +43,7 @@
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
+    "serve": "^6.4.1",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.6.2",
@@ -65,7 +66,9 @@
       "<rootDir>/config/polyfills.js",
       "<rootDir>/src/tests/setupTest.js"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
